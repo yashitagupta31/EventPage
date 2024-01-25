@@ -47,7 +47,7 @@ body{
    -webkit-text-stroke-color: #012345fc;
    -webkit-text-stroke-width: 2px;
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   animation: text 4s 1;
+   animation: text 5s 1;
 }
 
 @keyframes text {
