@@ -8,45 +8,85 @@
    text-decoration: none;
    transition: all .2s linear;
    text-transform: capitalize;
+   
+
 }
 
 html{
    font-size: 62.5%;
-   overflow-x: hidden;
+   
+   
+
 }
 
 body{
-   background: #2545a6;
+   background: #6d1f1c;
+   background-image: url("/EventPage/images/11852562_4851275.jpg");
+   background-size:cover;
 }
 
 .container{
    max-width: 1200px;
    margin:0 auto;
    padding:3rem 2rem;
+   
+   
+
 }
 
 .container .title{
-   font-size: 3.5rem;
-   color:#eee;
+   font-size: 7rem;
+   font-weight:900;
+   color: transparent;
+   background-image: url("/EventPage/images/blue-wall-background.jpg");
+   background-size: cover;
+   -webkit-background-clip: text;
    margin-bottom: 3rem;
    text-transform: uppercase;
    text-align: center;
+   -webkit-text-stroke-color: #012345fc;
+   -webkit-text-stroke-width: 2px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   animation: text 4s 1;
 }
 
+@keyframes text {
+   0% {
+       color:black;
+       margin-bottom: 50px;
+   }
+
+   30% {
+       letter-spacing: 25px;
+       margin-bottom: 40px;
+   }
+   95% {
+       letter-spacing: 5px;
+       margin-bottom: 30px;
+   }
+   }
+
+
 .container .products-container{
-   display: grid;
+   display:grid;
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
    gap:2rem;
+ 
 }
 
 .container .products-container .product{
    text-align: center;
    padding:3rem 2rem;
-   background: #fff;
+   background: #002b5894;
+  
    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-   outline: .1rem solid #ccc;
+   outline: .1rem solid #477fa4;
    outline-offset: -1.5rem;
    cursor: pointer;
+   margin: 10px 10px;
+   border-radius: 9px;
+   
+
 }
 
 .container .products-container .product:hover{
@@ -65,7 +105,7 @@ body{
 .container .products-container .product h3{
    padding:.5rem 0;
    font-size: 2rem;
-   color:#444;
+   color: rgb(151 173 191)
 }
 
 .container .products-container .product:hover h3{
@@ -74,7 +114,7 @@ body{
 
 .container .products-container .product .price{
    font-size: 2rem;
-   color:#444;
+   color:#687a8a;
 }
 
 .products-preview{
@@ -95,7 +135,8 @@ body{
    background: #fff;
    position: relative;
    margin:2rem;
-   width: 40rem;
+   width: 100rem;
+   border-radius: 10px;
 }
 
 .products-preview .preview.active{
